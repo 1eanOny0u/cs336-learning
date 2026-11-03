@@ -1,0 +1,2 @@
+# Preserve the imported official snapshot without line-ending conversion.
+materials/lectures/** -text
