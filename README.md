@@ -1,32 +1,42 @@
-# CS336 学习记录
+# CS336 自学笔记
 
-记录 Stanford **CS336: Language Modeling from Scratch** 的学习笔记、作业实践和实验结果，在比赛期间逐步积累语言模型基础。
+Stanford [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/)（Spring 2026）的中文自学笔记。
 
-## 课程入口
+正式课是 5 学分，五份实现型作业非常重。这份材料面向想在大约一个月里把正课主线理清的人：每天约 25 分钟读一小节官方讲义整理，再用约 5 分钟做文末自测。大约 30 天、合计约 15 小时，目标是搞明白一条语言模型从零搭起来要经过什么，而不是做完 Assignment 1–5。
 
-- [课程官网](https://cs336.stanford.edu/)
-- [2025 年课程页面](https://stanford-cs336.github.io/spring2025/)
-- [官方讲义：本地副本与索引](materials/README.md)
+## 怎么学
 
-当前收录的官方讲义对应 2026 春季版，笔记和作业均注明对应版本。
+- **中文讲解**，依据官方讲义（`lecture_XX.py` / PDF）拆分，并附上官方配图和关键论文链接。
+- **每天约 30 分钟**：25 分钟阅读 + 5 分钟自测。
+- **大约一个月走完 17 讲主线**：从分词、架构、训练与系统优化，到缩放定律、推理与评测、数据和对齐。最后两天做总复习，用自己的话把整条链路串起来。
+
+| 周次 | 安排 |
+| --- | --- |
+| 第 1 周（第 1–7 天） | Lecture 1–4：概览与分词、PyTorch / 资源估算、架构与超参、Attention 变体与 MoE；第 7 天复习 |
+| 第 2 周（第 8–14 天） | Lecture 5–8：GPU / TPU、Kernel 与 Triton、并行训练；第 14 天复习 |
+| 第 3 周（第 15–21 天） | Lecture 9–14：缩放定律、推理、评测、预训练数据；第 21 天复习 |
+| 第 4 周（第 22–30 天） | Lecture 15–17：SFT / RLHF、RLVR、对齐与多模态；第 29–30 天总复习 |
+
+当前已更新到第 4 天（第 2 讲：张量与数值精度）。后续按天追加到 [notes/2026/](notes/2026/)。
+
+## 官方入口
+
+- 课程主页：[cs336.stanford.edu](https://cs336.stanford.edu/)
+- 讲义仓库：[stanford-cs336/lectures](https://github.com/stanford-cs336/lectures)
+- Spring 2026 录像：[YouTube 播放列表](https://www.youtube.com/playlist?list=PLoROMvodv4rMqXOcazWaTUHhq-yembLCV)
+- 本仓库中的官方讲义快照与索引：[materials/](materials/README.md)
 
 ## 仓库目录
 
 ```text
 cs336-learning/
-├── materials/      # 官方讲义、配图和辅助文件
-├── notes/          # 课程笔记、推导和待解决的问题
-├── assignments/    # 按课程年份整理作业实践
+├── materials/      # 官方讲义快照、配图和辅助文件
+├── notes/          # 按天拆分的中文自学笔记（见 notes/2026/）
+├── assignments/    # 按课程年份整理的作业实践
 ├── experiments/    # 小实验、配置和结果摘要
-└── .gitignore      # 排除本地环境、数据和模型产物
+└── .gitignore
 ```
 
-## 当前进度
+## 说明
 
-- [x] 准备仓库基础目录。
-- [x] 收录 2026 春季官方讲义并记录来源版本。
-- [x] 确定第一阶段的学习安排。
-- [x] 完成第一讲并整理笔记。
-- [ ] 第 2 讲已开始：Day 4 覆盖张量与数值精度（见 [notes/2026/](notes/2026/)）；einops、FLOPs 以及后续讲次仍在后面。
-
-每次学习后记录学到的内容、仍有疑问的地方和下一步任务。实验同时记录运行命令、环境和关键结果。
+这是个人自学笔记，不是课程官方材料，也不包含作业答案。文中的课件图通过官方仓库的公开链接引用。如与官方材料冲突，以课程主页和官方讲义为准。
