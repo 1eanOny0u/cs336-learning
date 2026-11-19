@@ -17,7 +17,7 @@ Stanford [CS336: Language Modeling from Scratch](https://cs336.stanford.edu/)（
 | 第 3 周（第 15–21 天） | Lecture 9–14：缩放定律、推理、评测、预训练数据；第 21 天复习 |
 | 第 4 周（第 22–30 天） | Lecture 15–17：SFT / RLHF、RLVR、对齐与多模态；第 29–30 天总复习 |
 
-当前已更新到第 4 天（第 2 讲：张量与数值精度）。后续按天追加到 [notes/2026/](notes/2026/)。
+当前已更新到第 5 天（einops 与 FLOPs）。后续按天追加到 [notes/2026/](notes/2026/)。
 
 ## 官方入口
 

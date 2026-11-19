@@ -17,3 +17,4 @@
 | Day 2 | `course_syllabus` 的五个单元 | [五条主线与效率](2026/day02-五条主线与效率.md) |
 | Day 3 | 分词，第 1 讲结束 | [分词](2026/day03-分词.md) |
 | Day 4 | `lecture_02.py` 到 `tensors_on_gpus` | [张量与数值精度](2026/day04-张量与数值精度.md) |
+| Day 5 | `lecture_02.py`：`tensor_einops` 到 `tensor_operations_flops` | [einops 与 FLOPs](2026/day05-einops与FLOPs.md) |
